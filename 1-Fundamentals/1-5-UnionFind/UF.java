@@ -26,7 +26,7 @@ import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
 /**
- *  The <tt>UF</tt> class represents a union-find data data structure.
+ *  The <tt>UF</tt> class represents a union-find data  structure.
  *  It supports the <em>union</em> and <em>find</em>
  *  operations, along with a method for determining the number of
  *  disjoint sets.
