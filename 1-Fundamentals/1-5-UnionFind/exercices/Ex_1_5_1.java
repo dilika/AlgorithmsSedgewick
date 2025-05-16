@@ -1,8 +1,11 @@
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
+
+
+
 /*
 *Exercie:
-* 1.5.1 Show the contents of the id[] array and the number of times the array 
+* 1.5.1 Show the contents of the id[] array and the number of times the array
 * is accessed for each input pair when you use quick-find for the sequence
 @input = 9-0 3-4 5-8 7-2 2-1 5-7 0-3 4-2.
 * */
@@ -56,26 +59,18 @@ public class Ex_1_5_1 {
 }
 
 // Solution
-// For before first input line
-// Table id content: [0,1,2,3,4,5,6,7,8]
-// For Input : 9-0
-// Union(9,0):
-// pid = 9, qid = 0; Find --> 2 access
-// Non connecte --> 10
-// contenu id apres union est: [0,1,2,3,4,5,6,7,8]
-
-// For before first input line
-// Table id content: [0,1,2,3,4,5,6,7,8]
-// For Input : 3-4
-// Union(3,4):
-// pid = 3, qid = 4; Find --> 2 access
-// Non connecte union + ecriture --> 10
-// contenu id apres union est: [0,1,2,4,4,5,6,7,8]
-
-// For before first input line
-// Table id content: [0,1,2,4,4,5,6,7,8]
-// For Input : 3-4
-// Union(3,4):
-// pid = 3, qid = 4; Find --> 2 access
-// Non connecte union + ecriture --> 10
-// contenu id apres union est: [0,1,2,4,4,5,6,7,8]
+/*
+------------------------------------------------------------------
+| Operation   | id\[] after operation           | Array Accesses |
+| ---------   | ------------------------------- | -------------- |
+| 9-0         | [0, 1, 2, 3, 4, 5, 6, 7, 8, 0]  | 13             |
+| 3-4         | [0, 1, 2, 4, 4, 5, 6, 7, 8, 0]  | 13             |
+| 5-8         | [0, 1, 2, 4, 4, 8, 6, 7, 8, 0]  | 13             |
+| 7-2         | [0, 1, 2, 4, 4, 8, 6, 2, 8, 0]  | 13             |
+| 2-1         | [0, 1, 1, 4, 4, 8, 6, 1, 8, 0]  | 14             |
+| 5-7         | [0, 1, 1, 4, 4, 1, 6, 1, 1, 0]  | 14             |
+| 0-3         | [4, 1, 1, 4, 4, 1, 6, 1, 1, 4]  | 14             |
+| 4-2         | [1, 1, 1, 1, 1, 1, 6, 1, 1, 1]  | 16             |
+------------------------------------------------------------------
+*
+* */
